@@ -14,12 +14,27 @@
   <header class="header">
     <nav class="navbar">
       <div class="logo"><img src="/images/logo-bookmark.svg" alt="logo-bookmark"></div>
-      <ul>
-        <li class="navbar__item">Features</li>
-        <li class="navbar__item">Pricing</li>
-        <li class="navbar__item">Contact</li>
-        <li class="navbar__item">Login</li>
-      </ul>
+      <div class="modal" id="modal">
+        <div class="modal__content">
+          <div class="logos">
+            <div class="logos__item">
+              <div><img src="/images/logo-bookmark-white.svg" alt="logo-bookmark"></div>
+              <div> <img src="/images/icon-close.svg" alt="icon-close" id="close"></div>
+            </div>
+            <ul class="navbar">
+              <li class="navbar__item">Features</li>
+              <li class="navbar__item">Pricing</li>
+              <li class="navbar__item">Contact</li>
+            </ul>
+            <button class="navbar__button">Login</button>
+          </div>
+          <div class="modal__content__sociales">
+            <span><img src="/images/icon-facebook.svg" alt="icon-facebook"></span>
+            <span><img src="/images/icon-twitter.svg" alt="icon-twitter"></span>
+          </div>
+        </div>
+      </div>
+      <div class="ham"><img src="/images/icon-hamburger.svg" alt="icon-hamburger" id="ham"></div>
     </nav>
   </header>
   <section class="bookmart">
@@ -117,17 +132,17 @@
     </div>
     <button class="button">More info</button>
   </section>
-<section class="stat">
-  <p> 35,000+ already joined</p>
-  <h3> Stay up-to-date with what we’re doing</h3>
-<form action="#" id="form">
-  <input type="email" name="email" id="email" class="email">
-  <input type="submit" value="Contact Us" id="submit">
-</form>
-</section>
+  <section class="stat">
+    <p> 35,000+ already joined</p>
+    <h3> Stay up-to-date with what we’re doing</h3>
+    <form action="#" id="form">
+      <input type="email" name="email" id="email" class="email">
+      <input type="submit" value="Contact Us" id="submit">
+    </form>
+  </section>
   <footer>
     <nav class="nav__footer|">
-   
+
       <ul>
         <li class="nav__footer__item"> <img src="/images/logo-bookmark.svg" alt="logo-bookmark"></li>
         <li class="nav__footer__item">Features</li>
@@ -143,6 +158,7 @@
         Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.</p> -->
   </footer>
+  <script src="/script/script.js"></script>
 </body>
 
 </html>
