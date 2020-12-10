@@ -1,0 +1,18 @@
+:root{
+--Soft-Blue: hsl(231, 69%, 60%);
+--Soft-Red: hsl(0, 94%, 66%);
+--Grayish-Blue: hsl(229, 8%, 60%);
+--Very-Dark-Blue: hsl(229, 31%, 21%);
+}
+$soft-blue:var(--Soft-Blue);
+$soft-red:var(--Soft-Red);
+$grayish:var(--Grayish-Blue);
+$very-dark:var(--Very-Dark-Blue);
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+$font-name:'Rubik';
+
+body{
+  font-family: $font-name;
+  font-size: 18px;
+}
