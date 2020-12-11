@@ -2,6 +2,11 @@
   width: 100%;
 
   &__options {
+    @include laptop{
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    cursor: pointer;
     height: 100px;
     width: 80%;
     margin-left: auto;
@@ -15,16 +20,26 @@
     line-height: 2.5rem;
 
     &__item {
+      @include laptop{
+        border-top: none;
+        border-bottom: 1px solid $grayish;
+        &:hover{
+          color: $soft-red;
+          border-bottom: 2px solid $soft-red;
+        }
+      }
       position: relative;
       text-align: center;
       width: 100%;
       border-top: 1px solid $grayish;
-      // &:first-child{
-      //   border-bottom: 1px solid $soft-red;
-      // }
       &:last-child {
-        margin-bottom: 50px;
-        border-bottom: 2px solid $grayish;
+        @include laptop{
+          &:hover{
+            border-bottom: 2px solid $soft-red;
+          }
+        }
+      margin-bottom: 50px;
+      border-bottom: 1px solid $grayish;
       }
     }
   }
@@ -33,6 +48,10 @@
   }
 
   &__content {
+    @include laptop{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
     &:last-child {
       margin-bottom: 80px;
     }
@@ -61,6 +80,17 @@
     }
 
     & button {
+      @include laptop{
+        display: block;
+        border: none;
+        outline: none;
+        height: 60px;
+        width: 100px;
+        background-color: $soft-blue;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+      }
       display: none;
     }
   }

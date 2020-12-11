@@ -1,15 +1,40 @@
 .bookmart {
+  @include laptop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   & button:first-of-type {
+    @include laptop{
+      margin-left: 14%;
+      &:hover{
+        background-color: #fff;
+        color: $soft-blue;
+        border: 2px solid;
+      }
+    }
     background-color: $soft-blue;
     color: #fff;
   }
 
   & button:last-of-type {
+    @include laptop{
+      &:hover{
+        color: #000;
+        background-color: #eee;
+        border: 2px solid;
+      }
+    }
     background-color: #eee;
     color: #666;
   }
 
   &__title {
+    @include laptop{
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
     color: $very-dark;
     text-align: center;
     font-size: 1.8rem;
@@ -17,11 +42,18 @@
   }
 
   &__p {
+    @include laptop{
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
     text-align: center;
     color: $grayish;
   }
 
   &__button {
+    cursor: pointer;
     height: 50px;
     border: none;
     outline: none;
@@ -29,9 +61,23 @@
     margin-left: 20px;
   }
 }
-
+.div-1{
+  @include laptop{
+    grid-column: 2/-1;
+  }
+}
+.div-2{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
 .features {
+  @include laptop{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   & h2 {
+    font-size: 2rem;
     color: $very-dark;
     text-align: center;
   }
@@ -42,7 +88,7 @@
     margin-right: auto;
     text-align: justify;
     color: $grayish;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 }
 

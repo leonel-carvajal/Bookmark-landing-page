@@ -25,6 +25,7 @@ const tabFunc = (id) => {
     tab[i].style.display='none'
   }
   document.getElementById(id).style.display = 'block'
+  document.getElementById(id).style.display = 'grid'
 }
 taboption.forEach(tabEle => {
   tabEle.addEventListener('click', () => {
