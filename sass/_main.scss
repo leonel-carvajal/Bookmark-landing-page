@@ -1,40 +1,45 @@
 .bookmart {
-  @include laptop{
+  @include laptop {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   & button:first-of-type {
-    @include laptop{
+    @include laptop {
       margin-left: 14%;
-      &:hover{
+
+      &:hover {
         background-color: #fff;
         color: $soft-blue;
         border: 2px solid;
       }
     }
+
     background-color: $soft-blue;
     color: #fff;
   }
 
   & button:last-of-type {
-    @include laptop{
-      &:hover{
+    @include laptop {
+      &:hover {
         color: #000;
         background-color: #eee;
         border: 2px solid;
       }
     }
+
     background-color: #eee;
     color: #666;
   }
 
   &__title {
-    @include laptop{
+    @include laptop {
       width: 70%;
       margin-left: auto;
       margin-right: auto;
       text-align: left;
     }
+
     color: $very-dark;
     text-align: center;
     font-size: 1.8rem;
@@ -42,12 +47,13 @@
   }
 
   &__p {
-    @include laptop{
+    @include laptop {
       width: 70%;
       margin-left: auto;
       margin-right: auto;
       text-align: left;
     }
+
     text-align: center;
     color: $grayish;
   }
@@ -61,21 +67,25 @@
     margin-left: 20px;
   }
 }
-.div-1{
-  @include laptop{
+
+.div-1 {
+  @include laptop {
     grid-column: 2/-1;
   }
 }
-.div-2{
+
+.div-2 {
   grid-column: 1/2;
   grid-row: 1/2;
 }
+
 .features {
-  @include laptop{
+  @include laptop {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
+
   & h2 {
     font-size: 2rem;
     color: $very-dark;
@@ -94,18 +104,51 @@
 
 .extension {
   & h2 {
+    @include laptop {
+      font-size: 2.5rem;
+    }
+
     color: $very-dark;
     text-align: center;
   }
 
   & p {
+    @include laptop {
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 100px;
+    }
+
     color: $grayish;
     text-align: center;
   }
 }
 
 .card {
+  @include laptop {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   &__item {
+    @include laptop {
+      width: 25%;
+      margin-bottom: 100px;
+      height: 400px;
+
+      &:nth-child(2) {
+        margin-top: 30px;
+      }
+
+      &:last-child {
+        margin-top: 60px;
+      }
+    }
+
     width: 80%;
     height: 350px;
     margin-left: auto;
@@ -125,6 +168,17 @@
     }
 
     &__button {
+      @include laptop {
+        margin-top: 10px;
+
+        &:hover {
+          color: $soft-blue;
+          background-color: #fff;
+          border: 1px solid;
+        }
+      }
+
+      cursor: pointer;
       margin-top: 60px;
       background-color: $soft-blue;
       border: none;
@@ -138,6 +192,12 @@
 }
 
 .faq {
+  @include laptop {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   & h2 {
     color: $very-dark;
     text-align: center;
@@ -170,6 +230,13 @@
 }
 
 .question {
+  @include laptop {
+    &:hover {
+      color: $soft-red;
+    }
+  }
+
+  cursor: pointer;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -186,10 +253,11 @@
 .show-p {
   display: block;
 }
-.error{
+
+.error {
   background-color: rgb(230, 46, 27);
   color: #fff;
-  background-image: url('/images/icon-close.svg');
+  background-image: url('/images/icon-error.svg');
   background-repeat: no-repeat;
   background-position: 280px 12px;
 }
@@ -211,6 +279,11 @@
   }
 
   &__email {
+    @include laptop {
+      width: 40%;
+      margin-right: 10px;
+    }
+
     position: relative;
     width: 90%;
     height: 45px;
@@ -222,6 +295,16 @@
   }
 
   &__submit {
+    @include laptop {
+      width: 20%;
+      &:hover{
+        cursor: pointer;
+        color: $soft-red;
+        background-color: #fff;
+        border: 1px solid;
+      }
+    }
+
     position: relative;
     width: 90%;
     height: 45px;
@@ -234,7 +317,13 @@
     font-size: 1rem;
   }
 }
+
 .form {
+  @include laptop {
+    display: flex;
+    justify-content: center;
+  }
+
   width: 100%;
 }
 

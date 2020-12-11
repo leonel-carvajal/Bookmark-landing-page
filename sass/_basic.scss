@@ -16,3 +16,11 @@ body{
   font-family: $font-name;
   font-size: 18px;
 }
+body::-webkit-scrollbar{
+  background-color: var(--Very-Dark-Blue);
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: var(--Soft-Red);
+  border-radius: 8px;
+}

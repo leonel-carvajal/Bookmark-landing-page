@@ -1,4 +1,8 @@
 .footer{
+  @include laptop{
+    height: 70px;
+    flex-direction: row;
+  }
   background-color: $very-dark;
   color: #fff;
   height: 300px;
@@ -7,14 +11,47 @@
   justify-content: space-evenly;
   align-items: center;
   &__nav{
+    @include laptop{
+      height: 100%;
+      width: 50%;
+      & ul{
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    }
     text-align: center;
     &__item{
+      @include laptop{
+        &:hover{
+          cursor: pointer;
+          color: $soft-red;
+        }
+      }
       line-height: 3rem;
     }
   }
   &__social{
+    @include laptop{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+    }
     &__item{
+      @include laptop{
+        cursor: pointer;
+      }
       margin-right: 20px;
     }
   }
+}
+.attribution{
+    & a{
+      color: $soft-red;
+      text-decoration: none;
+    }
 }
