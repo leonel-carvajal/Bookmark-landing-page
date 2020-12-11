@@ -62,4 +62,4 @@ const validar_real = (e) => {
   }
 }
 submit.addEventListener('submit', comenzar)
-  window.addEventListener('DOMContentLoaded', comenzar)
+window.addEventListener('DOMContentLoaded', comenzar)
