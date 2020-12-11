@@ -1,0 +1,20 @@
+.footer{
+  background-color: $very-dark;
+  color: #fff;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  &__nav{
+    text-align: center;
+    &__item{
+      line-height: 3rem;
+    }
+  }
+  &__social{
+    &__item{
+      margin-right: 20px;
+    }
+  }
+}

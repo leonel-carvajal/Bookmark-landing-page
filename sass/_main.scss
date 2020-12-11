@@ -1,0 +1,180 @@
+.bookmart {
+  & button:first-of-type {
+    background-color: $soft-blue;
+    color: #fff;
+  }
+
+  & button:last-of-type {
+    background-color: #eee;
+    color: #666;
+  }
+
+  &__title {
+    color: $very-dark;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  &__p {
+    text-align: center;
+    color: $grayish;
+  }
+
+  &__button {
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+}
+
+.features {
+  & h2 {
+    color: $very-dark;
+    text-align: center;
+  }
+
+  & p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    color: $grayish;
+    margin-bottom: 50px;
+  }
+}
+
+.extension {
+  & h2 {
+    color: $very-dark;
+    text-align: center;
+  }
+
+  & p {
+    color: $grayish;
+    text-align: center;
+  }
+}
+
+.card {
+  &__item {
+    width: 80%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #eee;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px $grayish;
+
+    & img {
+      margin-top: 10px;
+    }
+
+    & h3 {
+      color: $very-dark;
+    }
+
+    &__button {
+      margin-top: 60px;
+      background-color: $soft-blue;
+      border: none;
+      outline: none;
+      padding: 0.5rem;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+  }
+}
+
+.faq {
+  & h2 {
+    color: $very-dark;
+    text-align: center;
+  }
+
+  & p {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    color: $grayish;
+    text-align: left;
+    font-size: 1rem;
+    display: none;
+  }
+
+  & h3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 3rem;
+    background-image: url('/images/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    color: $very-dark;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px solid $grayish;
+  }
+
+  &__button {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: $soft-blue;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    height: 50px;
+    width: 100px;
+    margin-left: 35%;
+  }
+}
+
+.stat {
+  background-color: $soft-blue;
+  color: #fff;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  & p {
+    letter-spacing: 5px;
+  }
+
+  &__email {
+    width: 90%;
+    height: 45px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+
+  &__submit {
+    width: 90%;
+    height: 45px;
+    background-color: $soft-red;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+}
+
+.form {
+  width: 100%;
+}

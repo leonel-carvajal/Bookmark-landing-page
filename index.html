@@ -42,8 +42,8 @@
     <h1 class="bookmart__title"> A Simple Bookmark Manager</h1>
     <p class="bookmart__p"> A clean and simple interface to organize your favourite websites. Open a new
       browser tab and see your sites load instantly. Try it for free.</p>
-    <button class="button"> Get it on Chrome</button>
-    <button class="button">Get it on Firefox</button>
+    <button class="bookmart__button"> Get it on Chrome</button>
+    <button class="bookmart__button">Get it on Firefox</button>
   </section>
   <section class="features">
     <h2>Features</h2>
@@ -53,30 +53,30 @@
 
   <section class="tab">
     <div class="tab__options">
-      <button class="tab__item"> Simple Bookmarking</button>
-      <button class="tab__item"> Speedy Searching</button>
-      <button class="tab__item"> Easy Sharing</button>
-      <div class="tab__content-1">
-        <img src="/images/illustration-features-tab-1.svg" alt="illustration-features-tab-1">
-        <h2> Bookmark in one click</h2>
-        <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
-          gives you complete control over how you manage your favourite sites.</p>
-        <button class="button">More Info</button>
-      </div>
-      <div class="tab__content-2">
-        <img src="/images/illustration-features-tab-2.svg" alt="illustration-features-tab-2">
-        <h2> Intelligent search</h2>
-        <p> Our powerful search feature will help you find saved sites in no time at all.
-          No need to trawl through all of your bookmarks.</p>
-        <button class="button">More Info</button>
-      </div>
-      <div class="tab__content-3">
-        <img src="/images/illustration-features-tab-3.svg" alt="illustration-features-tab-3">
-        <h2> Share your bookmarks</h2>
-        <p> Easily share your bookmarks and collections with others. Create a shareable
-          link that you can send at the click of a button</p>
-        <button class="button">More Info</button>
-      </div>
+      <div class="tab__options__item"> Simple Bookmarking</div>
+      <div class="tab__options__item"> Speedy Searching</div>
+      <div class="tab__options__item"> Easy Sharing</div>
+    </div>
+    <div class="tab__content">
+      <img src="/images/illustration-features-tab-1.svg" alt="illustration-features-tab-1">
+      <h2> Bookmark in one click</h2>
+      <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+        gives you complete control over how you manage your favourite sites.</p>
+      <button class="button">More Info</button>
+    </div>
+    <div class="tab__content">
+      <img src="/images/illustration-features-tab-2.svg" alt="illustration-features-tab-2">
+      <h2> Intelligent search</h2>
+      <p> Our powerful search feature will help you find saved sites in no time at all.
+        No need to trawl through all of your bookmarks.</p>
+      <button class="button">More Info</button>
+    </div>
+    <div class="tab__content">
+      <img src="/images/illustration-features-tab-3.svg" alt="illustration-features-tab-3">
+      <h2> Share your bookmarks</h2>
+      <p> Easily share your bookmarks and collections with others. Create a shareable
+        link that you can send at the click of a button</p>
+      <button class="button">More Info</button>
     </div>
   </section>
   <section class="extension">
@@ -89,21 +89,21 @@
         <h3>Add to Chrome</h3>
         <p> Minimum version 62</p>
         <img src="/images/bg-dots.svg" alt="bg-dots">
-        <button class="button"> Add & Install Extension</button>
+        <button class="card__item__button"> Add & Install Extension</button>
       </div>
       <div class="card__item">
         <img src="/images/logo-firefox.svg" alt="logo-firefox">
         <h3>Add to Fiferox</h3>
         <p> Minimum version 55</p>
         <img src="/images/bg-dots.svg" alt="bg-dots">
-        <button class="button"> Add & Install Extension</button>
+        <button class="card__item__button"> Add & Install Extension</button>
       </div>
       <div class="card__item">
         <img src="/images/logo-opera.svg" alt="logo-opera">
         <h3>Add to Opera</h3>
         <p> Minimum version 46</p>
         <img src="/images/bg-dots.svg" alt="bg-dots">
-        <button class="button"> Add & Install Extension</button>
+        <button class="card__item__button"> Add & Install Extension</button>
       </div>
     </article>
   </section>
@@ -130,29 +130,28 @@
       <p class="answer"> Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
         vitae neque eget nisl gravida pellentesque non ut velit.</p>
     </div>
-    <button class="button">More info</button>
+    <button class="faq__button">More info</button>
   </section>
   <section class="stat">
     <p> 35,000+ already joined</p>
     <h3> Stay up-to-date with what we’re doing</h3>
-    <form action="#" id="form">
-      <input type="email" name="email" id="email" class="email">
-      <input type="submit" value="Contact Us" id="submit">
+    <form action="#" id="form" class="form">
+      <input type="email" name="email" id="email" class="stat__email" placeholder="Enter your Email address"<br>
+      <input type="submit" value="Contact Us" id="submit" class="stat__submit">
     </form>
   </section>
-  <footer>
-    <nav class="nav__footer|">
-
+  <footer class="footer">
+    <nav class="footer__nav">
       <ul>
-        <li class="nav__footer__item"> <img src="/images/logo-bookmark.svg" alt="logo-bookmark"></li>
-        <li class="nav__footer__item">Features</li>
-        <li class="nav__footer__item">Princing</li>
-        <li class="nav__footer__item">Contact</li>
+        <li class="footer__nav__item"> <img src="/images/logo-bookmark-white.svg" alt="logo-bookmark"></li>
+        <li class="footer__nav__item">Features</li>
+        <li class="footer__nav__item">Princing</li>
+        <li class="footer__nav__item">Contact</li>
       </ul>
     </nav>
-    <div class="social">
-      <span class="social__item"><img src="/images/icon-facebook.svg" alt="icon-facebook"></span>
-      <span class="social__item"><img src="/images/icon-twitter.svg" alt="icon-twitter"></span>
+    <div class="footer__social">
+      <span class="footer__social__item"><img src="/images/icon-facebook.svg" alt="icon-facebook"></span>
+      <span class="footer__social__item"><img src="/images/icon-twitter.svg" alt="icon-twitter"></span>
     </div>
     <!-- <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
         Mentor</a>.
