@@ -1,6 +1,7 @@
-.tab{
+.tab {
   width: 100%;
-  &__options{
+
+  &__options {
     height: 100px;
     width: 80%;
     margin-left: auto;
@@ -12,11 +13,24 @@
     color: $very-dark;
     font-size: 1.2rem;
     line-height: 2.5rem;
-    &__item{
+
+    &__item {
       position: relative;
       text-align: center;
       width: 100%;
       border-top: 1px solid $grayish;
+
+      &:first-child::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        left: 25%;
+        width: 50%;
+        height: 3px;
+        background-color: $soft-red;
+      }
+
       // &::before{
       //   content: '';
       //   display: block;
@@ -27,34 +41,42 @@
       //   height: 3px;
       //   background-color:$soft-red;
       // }
-      &:last-child{
+      &:last-child {
         margin-bottom: 50px;
         border-bottom: 1px solid $grayish;
       }
     }
   }
-  &__content{
-    &:last-child{
+
+  &__content {
+    &:last-child {
       margin-bottom: 80px;
     }
-    &:nth-child(2), &:nth-child(3){
+
+    &:nth-child(2),
+    &:nth-child(3) {
       display: none;
     }
+
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    & img{
+
+    & img {
       max-width: 100%;
     }
-    & h2{
+
+    & h2 {
       color: $very-dark;
       text-align: center;
     }
-    & p{
+
+    & p {
       color: $grayish;
       text-align: left;
     }
-    & button{
+
+    & button {
       display: none;
     }
   }

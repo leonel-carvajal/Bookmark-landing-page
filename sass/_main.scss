@@ -97,7 +97,7 @@
     text-align: center;
   }
 
-  & p {
+  &__answer {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -105,20 +105,6 @@
     text-align: left;
     font-size: 1rem;
     display: none;
-  }
-
-  & h3 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 3rem;
-    background-image: url('/images/icon-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: top right;
-    color: $very-dark;
-    text-align: left;
-    font-size: 1rem;
-    border-bottom: 1px solid $grayish;
   }
 
   &__button {
@@ -135,6 +121,24 @@
     width: 100px;
     margin-left: 35%;
   }
+}
+
+.question {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 3rem;
+  background-image: url('/images/icon-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: $very-dark;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 1px solid $grayish;
+}
+
+.show-p {
+  display: block;
 }
 
 .stat {
@@ -177,4 +181,8 @@
 
 .form {
   width: 100%;
+}
+
+.arrow {
+  background-image: url('/images/icon-arrow-up.svg');
 }
