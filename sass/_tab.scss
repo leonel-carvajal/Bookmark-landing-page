@@ -19,33 +19,17 @@
       text-align: center;
       width: 100%;
       border-top: 1px solid $grayish;
-
-      &:first-child::before {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: -2px;
-        left: 25%;
-        width: 50%;
-        height: 3px;
-        background-color: $soft-red;
-      }
-
-      // &::before{
-      //   content: '';
-      //   display: block;
-      //   position: absolute;
-      //   bottom: -2px;
-      //   left: 25%;
-      //   width: 50%;
-      //   height: 3px;
-      //   background-color:$soft-red;
+      // &:first-child{
+      //   border-bottom: 1px solid $soft-red;
       // }
       &:last-child {
         margin-bottom: 50px;
-        border-bottom: 1px solid $grayish;
+        border-bottom: 2px solid $grayish;
       }
     }
+  }
+  .linea{
+    border-bottom: 1px solid $soft-red;
   }
 
   &__content {
@@ -80,4 +64,7 @@
       display: none;
     }
   }
+}
+.show-tab{
+  display: block;
 }

@@ -53,25 +53,25 @@
 
   <section class="tab">
     <div class="tab__options">
-      <div class="tab__options__item"> Simple Bookmarking</div>
-      <div class="tab__options__item"> Speedy Searching</div>
-      <div class="tab__options__item"> Easy Sharing</div>
+      <div class="tab__options__item" data-tab="0"> Simple Bookmarking</div>
+      <div class="tab__options__item" data-tab="1"> Speedy Searching</div>
+      <div class="tab__options__item" data-tab="2"> Easy Sharing</div>
     </div>
-    <div class="tab__content">
+    <div class="tab__content" id="0">
       <img src="/images/illustration-features-tab-1.svg" alt="illustration-features-tab-1">
       <h2> Bookmark in one click</h2>
       <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
         gives you complete control over how you manage your favourite sites.</p>
       <button class="button">More Info</button>
     </div>
-    <div class="tab__content">
+    <div class="tab__content" id="1">
       <img src="/images/illustration-features-tab-2.svg" alt="illustration-features-tab-2">
       <h2> Intelligent search</h2>
       <p> Our powerful search feature will help you find saved sites in no time at all.
         No need to trawl through all of your bookmarks.</p>
       <button class="button">More Info</button>
     </div>
-    <div class="tab__content">
+    <div class="tab__content" id="2">
       <img src="/images/illustration-features-tab-3.svg" alt="illustration-features-tab-3">
       <h2> Share your bookmarks</h2>
       <p> Easily share your bookmarks and collections with others. Create a shareable
@@ -135,8 +135,8 @@
   <section class="stat">
     <p> 35,000+ already joined</p>
     <h3> Stay up-to-date with what we’re doing</h3>
-    <form action="#" id="form" class="form">
-      <input type="email" name="email" id="email" class="stat__email" placeholder="Enter your Email address"<br>
+    <form method="GET" id="form" class="form" name="datos">
+      <input type="email" name="email" id="email" class="stat__email" placeholder="Enter your Email address">
       <input type="submit" value="Contact Us" id="submit" class="stat__submit">
     </form>
   </section>

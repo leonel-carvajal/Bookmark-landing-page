@@ -140,6 +140,13 @@
 .show-p {
   display: block;
 }
+.error{
+  background-color: rgb(230, 46, 27);
+  color: #fff;
+  background-image: url('/images/icon-close.svg');
+  background-repeat: no-repeat;
+  background-position: 280px 12px;
+}
 
 .stat {
   background-color: $soft-blue;
@@ -152,11 +159,13 @@
   align-items: center;
   text-align: center;
 
+
   & p {
     letter-spacing: 5px;
   }
 
   &__email {
+    position: relative;
     width: 90%;
     height: 45px;
     border: none;
@@ -167,6 +176,7 @@
   }
 
   &__submit {
+    position: relative;
     width: 90%;
     height: 45px;
     background-color: $soft-red;
@@ -178,7 +188,6 @@
     font-size: 1rem;
   }
 }
-
 .form {
   width: 100%;
 }
